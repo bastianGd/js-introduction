@@ -18,22 +18,21 @@
             <h6>Laptop Gamer AMD</h6>
             <p>Precio base: $<span class="precio-inicial"></span></p>
 
-            <p>Cantidad:
-                <span class="cantidad">0</span>
+            <p>Cantidad: <span class="cantidad">0</span>
 
                 <button id="suma" onclick="
-                var contador = Number(cantidadSpan.innerText);
+                var contador = Number(cantidadSpan.innerHTML);
                 contador ++;
-                cantidadSpan.innerText = contador;
-                valorTotalSpan.innerText=precioSpan.innerText * contador">
+                cantidadSpan.innerHTML = contador;
+                valorTotalSpan.innerHTML = precioSpan.innerHTML * contador">
                     +
                 </button>
 
                 <button id="resta" onclick="
-                var contador = Number(cantidadSpan.innerText);
-                if (contador >= 1) contador --;
-                cantidadSpan.innerText = contador;
-                valorTotalSpan.innerText=precioSpan.innerText * contador">
+                var contador = Number(cantidadSpan.innerHTML);
+                if (contador) contador --;
+                cantidadSpan.innerHTML = contador;
+                valorTotalSpan.innerHTML = precioSpan.innerHTML * contador">
                     -
                 </button>
             </p>
@@ -42,7 +41,7 @@
     </section>
 
     <div class="total-section">
-        <p>Total a pagar: $<span class="valor-total">0</span></p>
+        <p class=".p" >Total a pagar: $<span class="valor-total">0</span></p>
     </div>
 
     <script src="index.js">

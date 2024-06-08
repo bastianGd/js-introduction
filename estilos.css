@@ -47,9 +47,14 @@ body {
 }
 
 .total-section {
-    width: 200px;
-    padding: 35px;
+    width: 300px;
+    padding: 10px;
     box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.p { 
+    margin: 10px;
 }
 
 .total-section .color {
